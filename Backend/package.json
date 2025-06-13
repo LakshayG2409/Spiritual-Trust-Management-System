@@ -1,0 +1,28 @@
+{
+  "name": "pro2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/genai": "^0.7.0",
+    "@google/generative-ai": "^0.24.0",
+    "brain.js": "^1.4.10",
+    "cloudinary": "^1.41.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.12.1",
+    "multer": "^1.4.5-lts.1",
+    "multer-storage-cloudinary": "^4.0.0",
+    "openai": "^4.91.0",
+    "razorpay": "^2.9.6",
+    "twilio": "^5.5.1"
+  }
+}
