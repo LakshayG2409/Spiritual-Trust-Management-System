@@ -1,0 +1,81 @@
+/* Centering container */
+.activity-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+ 
+  text-align: center;
+}
+
+/* Side-by-side columns */
+.activity-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Volunteer & Donation Sections */
+.activity-section {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+.activity-section h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Lists */
+.request-list, .donation-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Individual Items */
+.request-item, .donation-item {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Status Colors */
+.status {
+  font-weight: bold;
+  padding: 3px 7px;
+  border-radius: 5px;
+}
+
+.status.accepted {
+  color: green;
+}
+
+.status.rejected {
+  color: red;
+}
+
+.status.pending {
+  color: orange;
+}
+
+/* Error Messages */
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .activity-columns {
+    flex-direction: column;
+  }
+}

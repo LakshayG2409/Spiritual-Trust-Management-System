@@ -1,0 +1,95 @@
+/* 🌟 Brief Page Styling */
+.brief-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 10%;
+    
+    border-radius: 10px;
+  }
+  
+  /* 📸 Slideshow */
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 1800px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slideshow.active {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  /* ✍️ Text Section */
+  .text-section {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* 🔹 Content Section */
+  .content-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 20px;
+  }
+  
+  .volunteer-section,
+  .donate-section {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .volunteer-section img,
+  .donate-section img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background: #218838;
+  }
+  
+  /* 📱 Responsive */
+  @media (max-width: 768px) {
+    .content-section {
+      flex-direction: column;
+    }
+  }
+  

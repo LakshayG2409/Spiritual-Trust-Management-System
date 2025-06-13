@@ -1,0 +1,101 @@
+.yoga-container {
+    background: linear-gradient(120deg, #f3f4f6, #e0f7fa);
+    background-image: url('https://plus.unsplash.com/premium_photo-1676815865390-8e3a9336f64b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8eW9nYSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: bgScroll 60s linear infinite;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  /* Background scroll animation */
+  @keyframes bgScroll {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+  }
+  
+  /* Form container */
+  .yoga-form {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    animation: fadeIn 1.5s ease;
+    padding: 3rem;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Input and select field styling */
+  .yoga-form input[type="email"],
+  .yoga-form select {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .yoga-form input[type="email"]:focus,
+  .yoga-form select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+  }
+  
+  /* Button animation */
+  .yoga-form button[type="submit"] {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .yoga-form button[type="submit"]:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+  }
+  
+  /* Recommendation box animation */
+  .yoga-form .recommendation {
+    animation: slideUp 1s ease;
+    background: #d1fae5;
+    border: 1px solid #34d399;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  /* Fix oversized image inside recommendation */
+.yoga-form .recommendation img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 1rem auto 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+  
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Error message styling */
+  .yoga-form .error-message {
+    color: #ef4444;
+    margin-top: 0.5rem;
+    animation: shake 0.3s ease-in-out;
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    50% { transform: translateX(4px); }
+    75% { transform: translateX(-4px); }
+    100% { transform: translateX(0); }
+  }
+  

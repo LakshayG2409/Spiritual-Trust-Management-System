@@ -1,0 +1,87 @@
+/* Orders Page Styling */
+.orders-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .orders-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Loading & Error Messages */
+  .loading, .error-message {
+    font-size: 18px;
+    color: #ff4d4d;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Empty Orders Message */
+  .no-orders {
+    font-size: 18px;
+    color: #555;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Orders List */
+  .orders-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .orders-list li {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .orders-list li:hover {
+    transform: scale(1.02);
+  }
+  
+  .orders-list p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .orders-list p strong {
+    color: #007bff;
+  }
+  
+  /* Order Status */
+  .status {
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  .status.processing {
+    color: #ff9800;
+  }
+  
+  .status.cancelled {
+    color: #ff4d4d;
+  }
+  
+  /* Divider */
+  .orders-list hr {
+    border: none;
+    height: 1px;
+    background: #ddd;
+    margin-top: 10px;
+  }
+  

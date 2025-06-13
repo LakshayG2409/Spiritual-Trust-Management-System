@@ -1,0 +1,36 @@
+/* 🌟 Footer Styling */
+.footer {
+  position: relative;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto; /* Ensures it sticks to bottom */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-right .social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.footer-right .social-icons a:hover {
+  color:white;
+}

@@ -1,0 +1,57 @@
+/* 🌟 Home Page Styling */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    background-size: cover;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* 📦 Content Wrapper */
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10%;
+}
+
+/* 📝 Brief Section (Glassmorphism Effect) */
+.brief-section {
+    background: rgba(255, 255, 255, 0.15);  /* Light transparent background */
+    backdrop-filter: blur(1px);  /* Blur effect to blend with bg */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    text-decoration-color: black;
+    max-width: 2000px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);  /* Subtle border */
+}
+
+/* 🔻 Footer */
+.footer-section {
+    background: rgba(0, 0, 0, 0.6);  /* Dark transparent background */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* 🎬 Fade-In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 768px) {
+    .content-wrapper {
+        padding: 20px 5%;
+    }
+    .brief-section {
+        padding: 20px;
+    }
+}

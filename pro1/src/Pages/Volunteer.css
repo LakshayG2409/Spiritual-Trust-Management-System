@@ -1,0 +1,151 @@
+/* Parent container for better spacing */
+.volunteer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+  }
+  
+  /* Section 1: Be a Volunteer */
+  .vol1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vol1 img {
+    width: 70%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  .vol1-text {
+    width: 70%;
+    text-align: left;
+    padding-right: 20px;
+  }
+  
+  .vol1-text h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .vol1-text h4 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Section 2: Ashram Volunteering */
+  .vol2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .vol2 img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .vol2 h1 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .vol2 h5 {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .vol2 button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .vol2 button:hover {
+    background-color: #0056b3;
+  }
+  /* Volunteer Form Styling */
+.volunteer-form {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.volunteer-form input,
+.volunteer-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.volunteer-form textarea {
+  height: 80px;
+}
+
+.volunteer-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.volunteer-form button:hover {
+  background-color: #0056b3;
+}
+
+  
+  /* Responsive: Stack layout on small screens */
+  @media (max-width: 768px) {
+    .vol1 {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .vol1 img,
+    .vol1-text {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  

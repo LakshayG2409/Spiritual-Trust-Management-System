@@ -1,0 +1,112 @@
+/* Apply background only to the booking page */
+.booking-page {
+  background: url("https://plus.unsplash.com/premium_photo-1663076518116-0f0637626edf?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va2luZ3xlbnwwfHwwfHx8MA%3D%3D") 
+  no-repeat center center/cover;
+  min-height: 100vh; /* Ensure it covers full viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+  /* Main container */
+  .booking-container {
+    max-width: 900px;
+    margin-top: 10px;
+    margin: 50px auto;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Heading */
+  .heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  /* No bookings message */
+  .no-bookings {
+    font-size: 18px;
+    color: #e74c3c;
+  }
+  
+  /* Table styling */
+  .booking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: slideUp 1s ease-in-out;
+  }
+  
+  /* Table Head */
+  .booking-table thead {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .booking-table th,
+  .booking-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Table Row Animations */
+  .booking-table tbody tr {
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover Effect */
+  .booking-table tbody tr:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.02);
+  }
+  
+  /* Status colors */
+  .success {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .failed {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Error & Loading Messages */
+  .loading,
+  .error-message {
+    font-size: 18px;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

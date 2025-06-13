@@ -1,0 +1,101 @@
+/* Checkout Page Styling */
+.checkout-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .checkout-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Cart Empty Message */
+  .empty-cart {
+    font-size: 18px;
+    color: #ff4d4d;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Form Styling */
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+  }
+  
+  .checkout-form input,
+  .checkout-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .checkout-form input:focus,
+  .checkout-form textarea:focus {
+    border-color: #3399cc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(51, 153, 204, 0.5);
+  }
+  
+  .checkout-form textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  /* Payment Section */
+  .total-amount {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  /* Button Styling */
+  .payment-btn {
+    width: 100%;
+    padding: 12px;
+    background: #3399cc;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .payment-btn:hover {
+    background: #2672a3;
+  }
+  
+  .payment-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Success Message */
+  .success-message {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,128 @@
+/* Scope styles under .login-page */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #3a6186, #89253e);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 450px;
+    max-width: 90%;
+    opacity: 0;
+    animation: slideIn 0.8s ease-in-out forwards;
+    transform: scale(0.9);
+}
+
+.login-box h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    animation: fadeIn 1s ease-in-out 0.5s forwards;
+    opacity: 0;
+}
+
+/* Input Fields */
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-box input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    transform: scale(1.02);
+}
+
+/* Submit Button */
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.login-box button:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+    transform: scale(1.05);
+}
+
+/* Switch Text */
+.switch-text {
+    margin-top: 1rem;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+.switch-text:hover {
+    color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .login-box {
+        width: 90%;
+        padding: 1.5rem;
+    }
+}

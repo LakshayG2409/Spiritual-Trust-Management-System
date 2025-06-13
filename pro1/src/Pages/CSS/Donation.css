@@ -1,0 +1,63 @@
+/* Centering the donation box */
+.donate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background: url("https://daffy.ghost.io/content/images/2022/05/Daffy-donation-platform-why-giving-feels-good.png") no-repeat center center/cover;
+  }
+  
+  /* Donation form box */
+  .donate-box {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* Title */
+  .donate-box h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Labels */
+  .donate-box label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    margin: 10px 0 5px;
+  }
+  
+  /* Input fields */
+  .donate-box input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Button styling */
+  .donate-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .donate-box button:hover {
+    background-color: #0056b3;
+  }
+  

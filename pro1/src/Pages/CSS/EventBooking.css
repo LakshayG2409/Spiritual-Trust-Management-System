@@ -1,0 +1,125 @@
+/* 🌟 Background Styling */
+.user-container {
+  background: url("https://t3.ftcdn.net/jpg/03/91/46/10/360_F_391461057_5P0BOWl4lY442Zoo9rzEeJU0S2c1WDZR.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* ✨ Title Animation */
+h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  animation: slideDown 1s ease-out;
+}
+
+/* 🎨 Input Box */
+input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #3399cc;
+}
+
+/* 📦 Event List */
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 80%;
+  margin-top: 20px;
+}
+
+/* 🎭 Event Card Animation */
+.event-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.7s ease-in-out;
+  position: relative;
+}
+
+.event-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 🖼️ Event Image (Fixed Size) */
+.event-image {
+  width: 20%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* 📅 Event Details */
+.event-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.event-card p {
+  color: #666;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* 🎟️ Booking Button */
+button {
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  color: white;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff6a88, #ff4a67);
+  transform: scale(1.05);
+}
+
+/* 🎬 Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* 📱 Responsive Styles */
+@media (max-width: 768px) {
+  .event-list {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
