@@ -1,0 +1,149 @@
+/* General Page Styling */
+.admin-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  h2, h3 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Create Event Form */
+  .create-event {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .create-event input,
+  .create-event textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .create-event button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .create-event button:hover {
+    background-color: #218838;
+  }
+  
+  /* Event List */
+  .event-list {
+    margin-top: 20px;
+  }
+  
+  /* Event Card Grid */
+  .event-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Individual Event Card */
+  .event-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    gap: 15px;
+  }
+  
+  .event-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .event-details {
+    flex: 1;
+  }
+  
+  .event-details h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .event-details p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  /* Delete Button */
+  .delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .delete-btn:hover {
+    background-color: darkred;
+  }
+  
+  /* Bookings Section */
+  .booking-list {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .booking-card {
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-left: 5px solid #007bff;
+  }
+  
+  .booking-card p {
+    margin: 5px 0;
+    color: #444;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .event-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .event-image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .event-details {
+      text-align: center;
+    }
+  }
+  

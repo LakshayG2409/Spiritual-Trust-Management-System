@@ -1,0 +1,124 @@
+/* Container */
+.admin-orders-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Title */
+.admin-orders-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Order Card */
+.order-card {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Order Header */
+.order-card h3 {
+    font-size: 1.4rem;
+    color: #007bff;
+    margin-bottom: 8px;
+}
+
+/* Order Details */
+.order-card p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Order Items */
+.order-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Image */
+.order-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+/* Payment Status */
+.order-card p.payment-status {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.order-card p.payment-status.paid {
+    color: #28a745;
+}
+
+.order-card p.payment-status.pending {
+    color: #dc3545;
+}
+
+/* Divider */
+.order-card hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 10px 0;
+}
+
+/* Loading & No Orders */
+.loading-text, .no-orders-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .admin-orders-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .order-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .order-card p {
+        font-size: 0.9rem;
+    }
+}

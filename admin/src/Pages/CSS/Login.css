@@ -1,0 +1,100 @@
+/* Background Styling */
+.admin-login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated Floating Particles */
+.admin-login-container::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    filter: blur(100px);
+    animation: floating 6s infinite alternate ease-in-out;
+}
+
+@keyframes floating {
+    from { transform: translateY(0px) translateX(0px); }
+    to { transform: translateY(30px) translateX(20px); }
+}
+
+/* Glassmorphism Effect */
+.admin-login-box {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Form Elements */
+.admin-login-box h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+.admin-login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.admin-login-box input:focus {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Button Styling */
+.admin-login-box button {
+    width: 100%;
+    padding: 12px;
+    background: #27ae60;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-login-box button:hover {
+    background: #2ecc71;
+    transform: scale(1.05);
+}
+
+/* Error Message */
+.admin-login-box p {
+    color: #ff6b6b;
+    margin-top: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}

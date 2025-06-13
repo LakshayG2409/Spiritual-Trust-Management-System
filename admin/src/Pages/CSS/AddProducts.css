@@ -1,0 +1,116 @@
+/* Form Container */
+.admin-form-container {
+    width: 450px;
+    padding: 25px;
+    background: white; /* Clean white card */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.6s ease-in-out;
+    margin: auto;
+}
+
+/* Title */
+.admin-form-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form */
+.admin-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Labels */
+.admin-form-container label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Inputs & Textareas */
+.admin-form-container input,
+.admin-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.admin-form-container input:focus,
+.admin-form-container textarea:focus {
+    border: 1px solid #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button */
+.admin-form-container button {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.admin-form-container button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.admin-form-container button:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+/* Success/Error Message */
+.message {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.success {
+    color: #28a745;
+}
+
+.error {
+    color: #dc3545;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .admin-form-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .admin-form-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .admin-form-container button {
+        font-size: 1rem;
+    }
+}

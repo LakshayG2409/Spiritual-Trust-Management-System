@@ -1,0 +1,158 @@
+/* Apply background image to the full page */
+.admin-donations-container {
+    padding: 20px;
+    text-align: center;
+    min-height: 100vh;
+    background: url("https://daffy.ghost.io/content/images/2022/05/Daffy-donation-platform-why-giving-feels-good.png") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  /* Dark overlay for readability */
+  .admin-donations-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  
+  /* Heading Styling */
+  h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    animation: slideDown 0.6s ease-in-out;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 90%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    animation: fadeInUp 0.7s ease-in-out;
+  }
+  
+  /* Header Styling */
+  th {
+    background: #4a90e2;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background 0.3s;
+  }
+  
+  /* Table Row Styling */
+  tr {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  /* Hover Effects */
+  tr:hover {
+    background: rgba(74, 144, 226, 0.1);
+    transform: scale(1.02);
+  }
+  
+  /* Table Data Styling */
+  td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Status Colors */
+  .status {
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Status: Success */
+  .status.success {
+    color: #2ecc71;
+    background: rgba(46, 204, 113, 0.15);
+    animation: pulseSuccess 1.5s infinite alternate;
+  }
+  
+  /* Status: Failed */
+  .status.failed {
+    color: #e74c3c;
+    background: rgba(231, 76, 60, 0.15);
+  }
+  
+  /* Status: Pending */
+  .status.pending {
+    color: #f39c12;
+    background: rgba(243, 156, 18, 0.15);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulseSuccess {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    table {
+      font-size: 14px;
+    }
+    th, td {
+      padding: 8px;
+    }
+  }
+  

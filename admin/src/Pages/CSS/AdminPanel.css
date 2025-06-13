@@ -1,0 +1,163 @@
+/* Full-page Background */
+.admin-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+/* Header Section */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+/* Admin Profile Picture */
+.admin-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.admin-pic:hover {
+  transform: scale(1.1);
+}
+
+/* Logout Button */
+.logout-btn {
+  padding: 8px 16px;
+  background: #e74c3c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+  background: #c0392b;
+}
+
+/* Content Layout */
+.content {
+  display: flex;
+  flex: 1;
+  height: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Sidebar Buttons */
+.sidebar button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.sidebar button:hover {
+  background: linear-gradient(135deg, #357abd, #2468a2);
+  transform: translateY(-2px);
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Admin Welcome Image */
+.main-content img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.main-content img:hover {
+  transform: scale(1.1);
+}
+
+/* Admin Welcome Heading */
+.main-content h1 {
+  font-size: 28px;
+  color:black;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  animation: slideIn 0.6s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+  }
+
+  .sidebar button {
+    width: auto;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .main-content h1 {
+    font-size: 24px;
+  }
+}
