@@ -8,8 +8,8 @@ require("dotenv").config();
 
 
 const razorpay = new Razorpay({
-    key_id: "rzp_test_hUEzYo60NLMeem",
-    key_secret: "DDT2TrHchKgwmtDIuoR85T2s",
+    key_id: "your_key_id",
+    key_secret: "your_key_secret",
   });
   
   // Create a new order
