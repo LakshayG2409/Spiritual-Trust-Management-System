@@ -64,7 +64,7 @@ app.use("/yoga", yogaRoutes);
 
 
 mongoose
-  .connect("mongodb+srv://guptalakshay517:9654878900@cluster0.tydc8.mongodb.net/SpiritualTrust")
+  .connect("YourMongodbid/SpiritualTrust")
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => {
     console.error("Error connecting to MongoDB:", err);
